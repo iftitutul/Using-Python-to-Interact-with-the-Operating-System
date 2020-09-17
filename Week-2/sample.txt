@@ -1,0 +1,8 @@
+This is first of line
+Please provide a wrapper script called ​ mkdockerize.sh​ at the root of your Git project
+that runs both produce​ and ​ serve​ options of the Docker container, taking care of
+passing arguments from the command line into the container.
+This is end of line
+
+Best Regards,
+TT
