@@ -1,4 +1,4 @@
-#/usr/bin/env python3
+#!/usr/bin/env python3
 
 file = open("sample.txt")
 lines = file.readlines()
