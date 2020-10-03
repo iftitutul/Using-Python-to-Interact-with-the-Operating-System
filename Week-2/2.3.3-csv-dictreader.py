@@ -1,0 +1,9 @@
+#CSV stands for Comma Separated Values.
+
+#!/usr/bin/env python3
+
+import csv
+with open("software.csv") as software:
+   reader = csv.DictReader(software)
+   for row in reader:
+      print("{} has {} users".format(row["name"],row["users"]))
