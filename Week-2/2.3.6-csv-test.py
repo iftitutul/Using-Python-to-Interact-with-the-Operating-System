@@ -7,6 +7,8 @@ import os
 import csv
 
 # Create a file with data in it
+
+
 def create_file(filename):
   with open(filename, "w") as file:
     file.write("name,color,type\n")
@@ -20,17 +22,17 @@ def create_file(filename):
 
 
 def contents_of_file(filename):
-  return_string = "a {} {} is {}\n".format(row["color"], row["name"], row["type"])
+  return_string = ""
 
   # Call the function to create the file
   create_file(filename)
 
   # Open the file
-  with open(filename) as file:
-  # Read the rows of the file into a dictionary
-  rea = csv.reader(file)
-  # Process each item of the dictionary
-  for row in reader:
+  with open(filename) as file_list:
+    # Read the rows of the file into a dictionary
+    reader = csv.DictReader(file_list)
+    # Process each item of the dictionary
+    for row in reader:
       return_string += "a {} {} is {}\n".format(
           row["color"], row["name"], row["type"])
   return return_string

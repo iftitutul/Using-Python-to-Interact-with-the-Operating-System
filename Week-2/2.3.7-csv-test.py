@@ -17,8 +17,6 @@ def create_file(filename):
     file.write("poinsettia,red,perennial\n")
     file.write("sunflower,yellow,annual\n")
 
-# Read the file contents and format the information about each row
-
 
 def contents_of_file(filename):
   return_string = ""
@@ -27,16 +25,19 @@ def contents_of_file(filename):
   create_file(filename)
 
   # Open the file
-  ___
-  # Read the rows of the file
-  rows = ___
-  # Process each row
-  for row in rows:
-      ___ = row
+  with open(filename) as f:
+    # Read the rows of the file
+    rows = csv.reader(f)
+    headers = next(rows)
+    # Process each row
+    for row in rows:
+      name, color, type = row
       # Format the return string for data rows only
+      return_string += "a {} {} is {}\n".format(color, name, type)
 
-      return_string += "a {} {} is {}\n".format(___)
   return return_string
 
-#Call the function
+
+# Call the function
+print(contents_of_file("flowers.csv"))
 

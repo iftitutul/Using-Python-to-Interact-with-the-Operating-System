@@ -9,7 +9,7 @@ users = [
             "name":"Sol Mansi", 
             "username": "solm",
             "department": "IT Infra"
-          },
+         },
          {
             "name": "Lio Nelson",
             "username": "lion",
