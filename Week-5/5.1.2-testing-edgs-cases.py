@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.6
 
 import unittest
-from testing import rearrange_name  # from <script_name> import <function_name>
+from testing import rearrange_name #from <script_name> import <function_name>
 
 class TestRearrange(unittest.TestCase):
    def test_basic(self):
@@ -17,5 +17,5 @@ class TestRearrange(unittest.TestCase):
       expected = ""
       self.assertEqual(rearrange_name(testcase), expected)
 
+# Run the tests
 unittest.main()
-

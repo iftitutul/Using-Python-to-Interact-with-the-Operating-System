@@ -27,5 +27,6 @@ class TestRearrange(unittest.TestCase):
       expected = "Voltaire"
       self.assertEqual(rearrange_name(testcase), expected)
 
+# Run the tests
 unittest.main()
 
